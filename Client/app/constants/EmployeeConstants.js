@@ -1,0 +1,10 @@
+import keyMirror from 'react/lib/keyMirror';
+
+export default {
+    ADD_EMPLOYEE: 'ADD_EMPLOYEE',
+    GET_EMPLOYEE:'GET_EMPLOYEE',
+    REMOVE_EMPLOYEE:'REMOVE_EMPLOYEE',
+    UPDATE_EMPLOYEE: 'UPDATE_EMPLOYEE',
+    GET_EMPLOYEES: 'GET_EMPLOYEES',
+    NOT_ARCHIVE: 'NOT_ARCHIVE'
+};

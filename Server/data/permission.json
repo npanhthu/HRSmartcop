@@ -1,0 +1,29 @@
+[
+    {"roleTypeId":"0","name":"Administrator",
+      "permission":
+     [{"permissionId":"0","label":"User","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+      {"permissionId":"1","label":"Role","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+      {"permissionId":"3","label":"Configure","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+      {"permissionId":"4","label":"LeaveList","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+      {"permissionId":"5","label":"Entitlement","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+      {"permissionId":"6","label":"AssignLeave","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+      {"permissionId":"7","label":"Read Employee","rights":[{"name":"read","right_id":"1"}]},
+      {"permissionId":"8","label":"Write Employee","rights":[{"name":"write","right_id":"2"}]}
+     ]
+    },
+    {"roleTypeId":"1","name":"ESS",
+      "permission":
+      [
+        {"permissionId":"6","label":"AssignLeave","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+         {"permissionId":"9","label":"MyLeaveList","rights":[{"name":"read","right_id":"1"}]}
+      ]
+    },
+    {"roleTypeId":"2","name":"Supervisor",
+      "permission":
+      [
+         {"permissionId":"7","label":"Read Employee","rights":[{"name":"read","right_id":"1"}]},
+         {"permissionId":"6","label":"AssignLeave","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]},
+         {"permissionId":"4","label":"LeaveList","rights":[{"name":"read","right_id":"1"},{"name":"write","right_id":"2"}]}
+       ]
+    }
+]

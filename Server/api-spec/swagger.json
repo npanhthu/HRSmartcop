@@ -1,0 +1,2064 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "0.1.0",
+        "title": "KFCSmartCorp",
+        "description": "HRM System for SmartDEV"
+    },
+    "host": "localhost:3007",
+    "basePath": "/api",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/auth": {
+            "post": {
+                "tags": [
+                    "Default"
+                ],
+                "summary": "User login system",
+                "description": "This api use to login into system\n",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Pet object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Login"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Login Successful",
+                        "schema": {
+                            "title": "TokenObject",
+                            "type": "object",
+                            "properties": {
+                                "id_token": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "The username or password don't match",
+                        "schema": {
+                            "title": "object",
+                            "type": "object",
+                            "properties": {
+                                "message": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/user": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get all User",
+                "description": "Gets all list `User` objects.\n",
+                "responses": {
+                    "200": {
+                        "description": "List all users",
+                        "schema": {
+                            "title": "Object",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetUser"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create new user",
+                "description": "This api use to create new a user\n",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "User object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "user created",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Update a user",
+                "description": "This api use to update a user\n",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "User object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "employee exist( message) or user created (success)",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{userId}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get user by id",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "type": "string",
+                        "description": "ID of the user",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Send a user with user Id",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/GetUser"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Delete user by id",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "deleteUser",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "userId",
+                        "description": "The userId that needs to be deleted",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User delete successful",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/user/findByUserName/{username}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get user by user name",
+                "description": "",
+                "operationId": "getUserByName",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "username",
+                        "description": "The name that needs to be fetched. Use user1 for testing.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/GetUser"
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/role": {
+            "get": {
+                "tags": [
+                    "Role"
+                ],
+                "summary": "Get all role",
+                "description": "Gets all list Role objects.\n",
+                "responses": {
+                    "200": {
+                        "description": "List all roles",
+                        "schema": {
+                            "title": "Object",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetRoleApi"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Role"
+                ],
+                "summary": "Create new a role",
+                "description": "This api use to create new a role\n",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "ROles object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/RoleApi"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "user role created",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Role"
+                ],
+                "summary": "Update a role",
+                "description": "This api use to update a role\n",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Roles object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/RoleApi"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "user role created",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/role/{id}": {
+            "get": {
+                "tags": [
+                    "Role"
+                ],
+                "summary": "Get role by role id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "type": "string",
+                        "description": "ID of the user",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sends the user with user Id",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/GetRoleApi"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Role"
+                ],
+                "summary": "Delete role by role id",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "deleteUser",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "The userId that needs to be deleted",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User delete successful",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/role/getDataPermissions": {
+            "post": {
+                "tags": [
+                    "Role"
+                ],
+                "summary": "Creates list of permission with given input array",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "List of user object",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Permission"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/employee": {
+            "get": {
+                "tags": [
+                    "Employee"
+                ],
+                "summary": "Find all employee",
+                "description": "Gets `Employee` object Array.",
+                "operationId": "findAllEmployee",
+                "responses": {
+                    "200": {
+                        "description": "Return array object employee",
+                        "schema": {
+                            "title": "employee list",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/employee"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Get list employee not success"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Employee"
+                ],
+                "summary": "Add a new employee",
+                "description": "Create new employee",
+                "operationId": "addNewEmployee",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "employee",
+                        "in": "body",
+                        "description": "employee object to add",
+                        "schema": {
+                            "$ref": "#/definitions/employee"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Save employee successful"
+                    },
+                    "400": {
+                        "description": "Return notice firstname or lastname or location is required and can not be empty"
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/employee/update": {
+            "post": {
+                "tags": [
+                    "Employee"
+                ],
+                "summary": "Update an existing employee",
+                "description": "Update employee",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "employee",
+                        "in": "body",
+                        "description": "Employee object need to update",
+                        "schema": {
+                            "$ref": "#/definitions/employee"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "update success"
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/employee/autoGenerateEmployeeId": {
+            "get": {
+                "tags": [
+                    "Employee"
+                ],
+                "summary": "create new employeeId for create new employee object",
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return employee id for create new employee",
+                        "schema": {
+                            "title": "employee id",
+                            "type": "string",
+                            "items": {
+                                "title": "employee id",
+                                "type": "string",
+                                "properties": {
+                                    "employeeId": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/employee/{employeeId}": {
+            "get": {
+                "tags": [
+                    "Employee"
+                ],
+                "parameters": [
+                    {
+                        "name": "employeeId",
+                        "in": "path",
+                        "type": "string",
+                        "description": "ID of the employeeId",
+                        "required": true
+                    }
+                ],
+                "summary": "Get an employee with employee id",
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return employee id for create new employee",
+                        "schema": {
+                            "title": "employee object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/employee"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/employee/notArchive/{employeeId}": {
+            "get": {
+                "tags": [
+                    "Employee"
+                ],
+                "summary": "Change status from active to unactive",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "employeeId",
+                        "in": "path",
+                        "type": "string",
+                        "description": "ID of the employeeId",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Remove leave entitlement and leave list that have employeeId same with employeeId params, after that update Employees from active to unactive."
+                    }
+                }
+            }
+        },
+        "/leave/schedulerLeave": {
+            "get": {
+                "tags": [
+                    "Assign Leave"
+                ],
+                "summary": "Get assign leave list",
+                "description": "Get all assign leave",
+                "responses": {
+                    "200": {
+                        "description": "Send error if have error in process, else return array assign leave",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/AssignLeave"
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Assign Leave"
+                ],
+                "summary": "Insert an assign leave to database",
+                "description": "",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "AssignLeave",
+                        "in": "body",
+                        "description": "AssignLeave object to add",
+                        "schema": {
+                            "$ref": "#/definitions/AssignLeave"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return message error if date not correct or meet problem in find or save process, else return add success notice"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Assign Leave"
+                ],
+                "summary": "Update an assign leave to database",
+                "description": "",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "AssignLeave",
+                        "in": "body",
+                        "description": "Assign leave object to update",
+                        "schema": {
+                            "$ref": "#/definitions/AssignLeave"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return message error if date not correct or meet problem in find or save process, else return update success notice"
+                    }
+                }
+            }
+        },
+        "/leave/schedulerLeave/{id}": {
+            "delete": {
+                "tags": [
+                    "Assign Leave"
+                ],
+                "summary": "Delete an assign leave",
+                "description": "",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "The id that needs to be deleted",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If have error in process return error notice, else return success notice"
+                    }
+                }
+            }
+        },
+        "/leave/schedulerLeave/findByEmployeeId/{employeeID}": {
+            "get": {
+                "tags": [
+                    "Assign Leave"
+                ],
+                "summary": "Get assign leave list arcording employeeId",
+                "description": "",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "employeeID",
+                        "description": "The employeeID that needs to be get list assign leave",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If have error return error notice, else return success notice"
+                    }
+                }
+            }
+        },
+        "/leave/leaveList/number-of-day": {
+            "post": {
+                "tags": [
+                    "Leave List"
+                ],
+                "summary": "Update number of day leave of all item in Leave list",
+                "description": "",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "arrayData",
+                        "in": "body",
+                        "description": "array data object to update",
+                        "schema": {
+                            "$ref": "#/definitions/arrData"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return message error if update not success, else return update success notice"
+                    }
+                }
+            }
+        },
+        "/leave/configure/workWeek": {
+            "post": {
+                "tags": [
+                    "Work Week"
+                ],
+                "summary": "Update work week",
+                "description": "",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "work week",
+                        "in": "body",
+                        "description": "work week object to add or update",
+                        "schema": {
+                            "$ref": "#/definitions/works"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If work country not exits, add object, else update workweek"
+                    }
+                }
+            }
+        },
+        "/leave/configure/workWeek/{workCountry}": {
+            "get": {
+                "tags": [
+                    "Work Week"
+                ],
+                "summary": "Get work week arcording country",
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "workCountry",
+                        "description": "The country that needs to be get work week",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If have error return error notice, else return success notice"
+                    }
+                }
+            }
+        },
+        "/leave/configure/leaveType": {
+            "post": {
+                "tags": [
+                    "Leave Type"
+                ],
+                "summary": "Add new leave type",
+                "description": "",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "leave type",
+                        "in": "body",
+                        "description": "leave type object to add",
+                        "schema": {
+                            "$ref": "#/definitions/leaveType"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If leave type name or color was existed or have error in save process return error message, else return success message"
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "Leave Type"
+                ],
+                "summary": "Get all leave type",
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If have error return error notice, else return success notice"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Leave Type"
+                ],
+                "summary": "Update an leave type",
+                "description": "",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "LeaveType",
+                        "in": "body",
+                        "description": "LeaveType object to update",
+                        "schema": {
+                            "$ref": "#/definitions/leaveType"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return message error if color existed or meet problem in find or save process, else return update success notice"
+                    }
+                }
+            }
+        },
+        "/leave/configure/leaveType/findByIdentify/{identify}": {
+            "get": {
+                "tags": [
+                    "Leave Type"
+                ],
+                "summary": "Get a leave type arcording id",
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "identify",
+                        "description": "The identify to determine leave type",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If have error return error notice, else return leave type object"
+                    }
+                }
+            }
+        },
+        "/leave/configure/leaveType/{id}": {
+            "delete": {
+                "tags": [
+                    "Leave Type"
+                ],
+                "summary": "Delete an leave type",
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "The id that needs to be deleted",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "If have error in process return error notice, else return success notice"
+                    }
+                }
+            }
+        },
+        "/leave/leaveEntitlement": {
+            "post": {
+                "tags": [
+                    "Entitlement"
+                ],
+                "summary": "Create An entitlement",
+                "description": "This api use to create new a leave entitlemente\n",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Pet object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Entitlement"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "entitlement created",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/leaveEntitlement/{id}": {
+            "delete": {
+                "tags": [
+                    "Entitlement"
+                ],
+                "summary": "Delete An entitlement",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "deleteEntitlement",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "The userId that needs to be deleted",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Entitlement delete successful",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/leaveEntitlement/findLeaveEntitleByEmployeeId": {
+            "get": {
+                "tags": [
+                    "Entitlement"
+                ],
+                "summary": "Get an employee with employee id",
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return entitlement",
+                        "schema": {
+                            "title": "employee object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/GetEntitlement"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/leaveEntitlement/findByEmployeeID/{name}": {
+            "get": {
+                "tags": [
+                    "Entitlement"
+                ],
+                "summary": "find an entitlement by employeeId",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "type": "string",
+                        "description": "name of employee",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return entitlement",
+                        "schema": {
+                            "title": "employee object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/GetEntitlement"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/leaveEntitlement/findLeaveTypeByEmployee/{name}": {
+            "get": {
+                "tags": [
+                    "Entitlement"
+                ],
+                "summary": "find leavetype by employeeId",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "type": "string",
+                        "description": "name of employee",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return leavetype",
+                        "schema": {
+                            "title": "leaveType object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/LeaveTypeForEntitlement"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/leaveEntitlement/id/{id}/{name}": {
+            "get": {
+                "description": "",
+                "tags": [
+                    "Entitlement"
+                ],
+                "summary": "find entitlement by id and name",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "type": "string",
+                        "description": "ID of the employee",
+                        "required": true
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "type": "string",
+                        "description": "name of the employee",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return entitlement",
+                        "schema": {
+                            "title": "employee object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/GetEntitlement"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/leaveEntitlement/findById/{id}": {
+            "get": {
+                "tags": [
+                    "Entitlement"
+                ],
+                "summary": "find by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "type": "string",
+                        "description": "id of entitlement",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Return entitlement",
+                        "schema": {
+                            "title": "employee object",
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/GetEntitlement"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/configure/leaveperiod": {
+            "get": {
+                "tags": [
+                    "Period"
+                ],
+                "summary": "get all list periods",
+                "description": "Gets all list periods objects.\n",
+                "responses": {
+                    "200": {
+                        "description": "List all periods",
+                        "schema": {
+                            "title": "Object",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetLeavePeriod"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Period"
+                ],
+                "summary": "update a period",
+                "description": "This api use to update a period\n",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Period object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/LeavePeriod"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "perid changed",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "success": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/leave/configure/leaveperiod/getPeriodCurrentYear": {
+            "get": {
+                "tags": [
+                    "Period"
+                ],
+                "summary": "get all list periods currentyear",
+                "description": "Gets all list periods current year objects.\n",
+                "responses": {
+                    "200": {
+                        "description": "List all periods",
+                        "schema": {
+                            "title": "Object",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetLeavePeriod"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "sends request errors",
+                        "schema": {
+                            "title": "Object",
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Login": {
+            "properties": {
+                "username": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "User": {
+            "properties": {
+                "username": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "employeeId": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "number"
+                },
+                "accType": {
+                    "type": "number"
+                },
+                "userrole": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Role"
+                    }
+                }
+            }
+        },
+        "GetUser": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "employeeId": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "number"
+                },
+                "accType": {
+                    "type": "number"
+                },
+                "userrole": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Role"
+                    }
+                }
+            }
+        },
+        "Role": {
+            "properties": {
+                "essrole": {
+                    "type": "string"
+                },
+                "supervisorrole": {
+                    "type": "string"
+                },
+                "adminrole": {
+                    "type": "string"
+                }
+            }
+        },
+        "RoleApi": {
+            "properties": {
+                "username": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Type"
+                    }
+                },
+                "permissions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Permission"
+                    }
+                }
+            }
+        },
+        "GetRoleApi": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Type"
+                    }
+                },
+                "permissions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Permission"
+                    }
+                }
+            }
+        },
+        "Type": {
+            "properties": {
+                "roleTypeId": {
+                    "type": "string"
+                },
+                "nameType": {
+                    "type": "string"
+                }
+            }
+        },
+        "Permission": {
+            "properties": {
+                "permission_id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "rights": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Right"
+                    }
+                }
+            }
+        },
+        "Right": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "right_id": {
+                    "type": "string"
+                }
+            }
+        },
+        "employee": {
+            "required": [
+                "employeeId",
+                "firstName",
+                "lastName",
+                "location",
+                "leaveBalance",
+                "isArchive",
+                "imageUpload",
+                "bloodGroup",
+                "DLNumber",
+                "licenseExpiryData",
+                "gender",
+                "maritalStatus",
+                "nationality",
+                "nickName",
+                "dateOfBirth"
+            ],
+            "properties": {
+                "employeeId": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "leaveBalance": {
+                    "type": "number"
+                },
+                "isArchive": {
+                    "type": "number"
+                },
+                "imageUpload": {
+                    "type": "string"
+                },
+                "bloodGroup": {
+                    "type": "string"
+                },
+                "DLNumber": {
+                    "type": "string"
+                },
+                "licenseExpiryData": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "number"
+                },
+                "maritalStatus": {
+                    "type": "number"
+                },
+                "nationality": {
+                    "type": "number"
+                },
+                "nickName": {
+                    "type": "string"
+                },
+                "dateOfBirth": {
+                    "type": "string"
+                }
+            }
+        },
+        "AssignLeave": {
+            "required": [
+                "_identify",
+                "_leaveTypeId",
+                "_employeeId",
+                "_fromDate",
+                "_toDate",
+                "numberOfDay",
+                "_fromTime",
+                "_toTime",
+                "_comment",
+                "_status",
+                "_color",
+                "_user",
+                "_leaveType"
+            ],
+            "properties": {
+                "_identify": {
+                    "type": "string"
+                },
+                "_leaveTypeId": {
+                    "type": "string"
+                },
+                "_employeeId": {
+                    "type": "string"
+                },
+                "_fromDate": {
+                    "type": "string"
+                },
+                "_toDate": {
+                    "type": "string"
+                },
+                "numberOfDay": {
+                    "type": "number"
+                },
+                "_fromTime": {
+                    "type": "string"
+                },
+                "_toTime": {
+                    "type": "string"
+                },
+                "_comment": {
+                    "type": "string"
+                },
+                "_status": {
+                    "type": "number"
+                },
+                "_color": {
+                    "type": "string"
+                },
+                "_user": {
+                    "type": "string"
+                },
+                "_leaveType": {
+                    "type": "string"
+                }
+            }
+        },
+        "arrData": {
+            "required": [
+                "id",
+                "numOfDays"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "numOfDays": {
+                    "type": "string"
+                }
+            }
+        },
+        "works": {
+            "required": [
+                "workCountry",
+                "workWeeks"
+            ],
+            "properties": {
+                "workCountry": {
+                    "type": "string"
+                },
+                "workWeeks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/workweeks"
+                    }
+                }
+            }
+        },
+        "workweeks": {
+            "required": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thurday",
+                "friday",
+                "saturday",
+                "sunday"
+            ],
+            "properties": {
+                "monday": {
+                    "type": "string"
+                },
+                "tuesday": {
+                    "type": "string"
+                },
+                "wednesday": {
+                    "type": "string"
+                },
+                "thurday": {
+                    "type": "string"
+                },
+                "friday": {
+                    "type": "string"
+                },
+                "saturday": {
+                    "type": "string"
+                },
+                "sunday": {
+                    "type": "string"
+                }
+            }
+        },
+        "leaveType": {
+            "required": [
+                "leavetype",
+                "country",
+                "_color"
+            ],
+            "properties": {
+                "leavetype": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "_color": {
+                    "type": "string"
+                }
+            }
+        },
+        "Entitlement": {
+            "properties": {
+                "employee": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EmployeeForEntitlement"
+                    }
+                },
+                "leaveType": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LeaveTypeForEntitlement"
+                    }
+                },
+                "entitlementDay": {
+                    "type": "string"
+                },
+                "leavePeriodId": {
+                    "type": "string"
+                }
+            }
+        },
+        "GetEntitlement": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "employee": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EmployeeForEntitlement"
+                    }
+                },
+                "leaveType": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LeaveTypeForEntitlement"
+                    }
+                },
+                "entitlementDay": {
+                    "type": "string"
+                },
+                "leavePeriodId": {
+                    "type": "string"
+                }
+            }
+        },
+        "LeaveTypeForEntitlement": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "leavetype_id": {
+                    "type": "string"
+                },
+                "color": {
+                    "type": "string"
+                }
+            }
+        },
+        "EmployeeForEntitlement": {
+            "properties": {
+                "employee_id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "LeavePeriod": {
+            "properties": {
+                "month": {
+                    "type": "string"
+                },
+                "day": {
+                    "type": "string"
+                },
+                "start": {
+                    "type": "string"
+                },
+                "end": {
+                    "type": "string"
+                }
+            }
+        },
+        "GetLeavePeriod": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "idPeriod": {
+                    "type": "number"
+                },
+                "month": {
+                    "type": "string"
+                },
+                "day": {
+                    "type": "string"
+                },
+                "start": {
+                    "type": "string"
+                },
+                "end": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

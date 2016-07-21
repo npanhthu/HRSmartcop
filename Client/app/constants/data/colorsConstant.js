@@ -1,0 +1,25 @@
+
+export default[
+    {name: 'Green', value:'#008000'},
+    {name: 'Blue', value:'#0000FF'},
+    {name: 'DarkCyan', value:'#008B8B'},
+    {name: 'Red', value:'#FF0000'},
+    {name: 'OrangeRed', value:'#FF4500'},
+    {name: 'Orchid', value:'#DA70D6'},
+    {name: 'Yellow', value:'#FFFF00'},
+    {name: 'YellowGreen', value:'#9ACD32'},
+    {name: 'White', value:'#FFFFFF'},
+    {name: 'Lime', value:'#00FF00'},
+    {name: 'Magenta', value:'#FF00FF'},
+    {name: 'Maroon', value:'#800000'},
+    {name: 'Olive', value:'#808000'},
+    {name: 'Purple', value:'#800080'},
+    {name: 'Teal', value:'#008080'},
+    {name: 'Navy', value:'#000080'},
+    {name: 'aqua marine', value:'#7FFFD4'},
+    {name: 'dodger blue', value:'#1E90FF'},
+    {name: 'light sky blue', value:'#87CEFA'},
+    {name: 'midnight blue', value:'#191970'},
+    {name: 'dark blue', value:'#00008B'},
+    {name: 'slate blue', value:'#6A5ACD'}
+]

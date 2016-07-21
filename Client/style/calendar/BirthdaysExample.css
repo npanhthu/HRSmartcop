@@ -1,0 +1,30 @@
+/* line 5, ../react-day-picker-master/site/src/style/BirthdaysExample.scss */
+.Birthdays .DayPicker-Caption {
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  height: auto;
+  text-align: left;
+  margin-left: 1%;
+  color: #000000;
+}
+/* line 14, ../react-day-picker-master/site/src/style/BirthdaysExample.scss */
+.Birthdays .DayPicker-Weekday {
+  text-align: left;
+}
+/* line 18, ../react-day-picker-master/site/src/style/BirthdaysExample.scss */
+.Birthdays .DayPicker-Day {
+  width: 200px;
+  height: 75px;
+  vertical-align: top;
+  text-align: right;
+}
+/* line 26, ../react-day-picker-master/site/src/style/BirthdaysExample.scss */
+.Birthdays .Birthdays-List {
+  text-align: left;
+  margin-top: .5rem;
+  font-weight: 300;
+  color: #565a5c;
+  font-size: 15px;
+
+}

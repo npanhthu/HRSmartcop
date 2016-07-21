@@ -1,0 +1,836 @@
+2015-12-24T07:05:32.441Z - debug: Listening on *:3007
+2015-12-24T07:06:14.267Z - debug: Something is happening in auth. 
+2015-12-24T07:06:38.686Z - debug: Something is happening in auth. 
+2015-12-24T07:06:42.866Z - debug: Something is happening in auth. 
+2015-12-24T07:07:04.513Z - debug: Something is happening with users controller. 
+2015-12-24T07:07:04.514Z - debug: employee 
+2015-12-24T07:07:34.717Z - debug: Something is happening in auth. 
+2015-12-24T07:12:31.475Z - debug: Listening on *:3007
+2015-12-24T07:12:58.758Z - debug: Something is happening in auth. 
+2015-12-24T07:13:02.874Z - debug: Something is happening in auth. 
+2015-12-24T07:13:03.072Z - debug: Something is happening with users controller. 
+2015-12-24T07:13:03.102Z - debug: employee 
+2015-12-24T07:13:17.569Z - debug: employee 
+2015-12-24T07:13:17.650Z - debug: Something is happening with users controller. 
+2015-12-24T07:13:42.026Z - debug: employee 
+2015-12-24T07:13:46.024Z - debug: data on server 
+2015-12-24T07:13:46.024Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4]
+2015-12-24T07:13:46.032Z - error:  ok=1, nModified=0, n=1
+2015-12-24T07:13:46.033Z - error:  ok=1, nModified=0, n=1
+2015-12-24T07:13:49.596Z - debug: employee 
+2015-12-24T07:13:49.655Z - debug: Something is happening with users controller. 
+2015-12-24T07:14:10.580Z - debug: Something is happening of role. 
+2015-12-24T07:14:10.587Z - debug: Default ESS already exist
+2015-12-24T07:14:10.588Z - debug: Default Supervisor already exist
+2015-12-24T07:28:20.257Z - debug: Something is happening in auth. 
+2015-12-24T07:28:20.353Z - debug: employee 
+2015-12-24T07:28:20.651Z - debug: Something is happening with users controller. 
+2015-12-24T07:28:26.622Z - debug: employee 
+2015-12-24T07:28:26.677Z - debug: Something is happening with users controller. 
+2015-12-24T07:28:28.524Z - debug: Something is happening of role. 
+2015-12-24T07:28:28.545Z - debug: employee 
+2015-12-24T07:28:28.557Z - debug: Default ESS already exist
+2015-12-24T07:28:28.557Z - debug: Default Supervisor already exist
+2015-12-24T07:30:51.284Z - debug: Employee created
+2015-12-24T07:32:09.394Z - debug: update employee
+2015-12-24T07:32:14.123Z - debug: employee 
+2015-12-24T07:32:14.182Z - debug: employee 
+2015-12-24T07:32:47.234Z - debug: employee 
+2015-12-24T07:32:47.262Z - debug: employee 
+2015-12-24T07:32:51.576Z - debug: Something is happening with users controller. 
+2015-12-24T07:32:51.585Z - debug: employee 
+2015-12-24T07:32:51.647Z - debug: employee 
+2015-12-24T07:32:55.671Z - debug: employee 
+2015-12-24T07:32:55.697Z - debug: employee 
+2015-12-24T07:32:55.708Z - debug: Something is happening with users controller. 
+2015-12-24T07:33:00.750Z - debug: Something is happening of role. 
+2015-12-24T07:33:00.764Z - debug: employee 
+2015-12-24T07:33:00.822Z - debug: Default ESS already exist
+2015-12-24T07:33:00.822Z - debug: Default Supervisor already exist
+2015-12-24T07:33:00.842Z - debug: employee 
+2015-12-24T07:33:34.848Z - debug: Something is happening with users controller. 
+2015-12-24T07:33:34.859Z - debug: Something is happening with users controller. 
+2015-12-24T07:33:34.863Z - debug: Something is happening with users controller. 
+2015-12-24T07:33:34.885Z - debug: Something is happening with users controller. 
+2015-12-24T07:33:34.894Z - debug: Something is happening with users controller. 
+2015-12-24T07:34:02.231Z - debug: Something is happening in auth. 
+2015-12-24T07:34:06.805Z - debug: Something is happening in auth. 
+2015-12-24T07:34:06.916Z - debug: Something is happening with users controller. 
+2015-12-24T07:34:06.933Z - debug: employee 
+2015-12-24T07:34:07.054Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:34:07.055Z - debug: id is SMC0051
+2015-12-24T07:34:07.056Z - debug: employee Id is SMC0051
+2015-12-24T07:41:33.380Z - debug: Listening on *:3007
+2015-12-24T07:41:47.460Z - debug: Something is happening in auth. 
+2015-12-24T07:41:47.566Z - debug: Something is happening with users controller. 
+2015-12-24T07:41:47.607Z - debug: employee 
+2015-12-24T07:41:59.556Z - debug: employee 
+2015-12-24T07:42:11.311Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:11.311Z - debug: Something is happen with entitle
+2015-12-24T07:42:11.314Z - debug: 
+2015-12-24T07:42:13.916Z - debug: employee 
+2015-12-24T07:42:17.516Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:35.865Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:35.865Z - debug: check entitle leavetype
+2015-12-24T07:42:35.867Z - debug: success
+2015-12-24T07:42:35.876Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:35.877Z - debug: check entitle
+2015-12-24T07:42:35.879Z - debug: success
+2015-12-24T07:42:35.885Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:35.885Z - debug: to service addLeaveEntitlement
+2015-12-24T07:42:35.885Z - debug: SMC0051
+2015-12-24T07:42:35.893Z - debug:  strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _id=undefined, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, lastName=init, firstName=init, employeeId=init, nickName=init, nationality=init, maritalStatus=init, licenseExpiryData=init, gender=init, dateOfBirth=init, bloodGroup=init, DLNumber=init, __v=init, location=init, leaveBalance=init, isArchive=init, imageUpload=init, _id=init, , , nickName=true, nationality=true, maritalStatus=true, licenseExpiryData=true, gender=true, dateOfBirth=true, bloodGroup=true, DLNumber=true, __v=true, employeeId=true, firstName=true, lastName=true, location=true, leaveBalance=true, isArchive=true, imageUpload=true, _id=true, , , stateNames=[require, modify, init, default, ignore], ownerDocument=undefined, fullPath=undefined, domain=null, , _eventsCount=0, _maxListeners=0, isNew=false, errors=undefined, nickName=thu, nationality=189, maritalStatus=0, licenseExpiryData=, gender=1, dateOfBirth=1991-07-11, bloodGroup=0, DLNumber=, __v=0, employeeId=SMC0051, firstName=Thu, lastName=Nguyen, location=189, leaveBalance=0, isArchive=1, imageUpload=, _bsontype=ObjectID, id=V{+T¬äv-ú, $__original_save=function () {
+      var self = this
+        , hookArgs // arguments eventually passed to the hook - are mutable
+        , lastArg = arguments[arguments.length-1]
+        , pres = this._pres[name]
+        , posts = this._posts[name]
+        , _total = pres.length
+        , _current = -1
+        , _asyncsLeft = proto[name].numAsyncPres
+        , _asyncsDone = function(err) {
+            if (err) {
+              return handleError(err);
+            }
+            --_asyncsLeft || _done.apply(self, hookArgs);
+          }
+        , handleError = function(err) {
+            if ('function' == typeof lastArg)
+              return lastArg(err);
+            if (errorCb) return errorCb.call(self, err);
+            throw err;
+          }
+        , _next = function () {
+            if (arguments[0] instanceof Error) {
+              return handleError(arguments[0]);
+            }
+            var _args = Array.prototype.slice.call(arguments)
+              , currPre
+              , preArgs;
+            if (_args.length && !(arguments[0] == null && typeof lastArg === 'function'))
+              hookArgs = _args;
+            if (++_current < _total) {
+              currPre = pres[_current]
+              if (currPre.isAsync && currPre.length < 2)
+                throw new Error("Your pre must have next and done arguments -- e.g., function (next, done, ...)");
+              if (currPre.length < 1)
+                throw new Error("Your pre must have a next argument -- e.g., function (next, ...)");
+              preArgs = (currPre.isAsync
+                          ? [once(_next), once(_asyncsDone)]
+                          : [once(_next)]).concat(hookArgs);
+              return currPre.apply(self, preArgs);
+            } else if (!_asyncsLeft) {
+              return _done.apply(self, hookArgs);
+            }
+          }
+        , _done = function () {
+            var args_ = Array.prototype.slice.call(arguments)
+              , ret, total_, current_, next_, done_, postArgs;
+
+            if (_current === _total) {
+              
+              next_ = function () {
+                if (arguments[0] instanceof Error) {
+                  return handleError(arguments[0]);
+                }
+                var args_ = Array.prototype.slice.call(arguments, 1)
+                  , currPost
+                  , postArgs;
+                if (args_.length) hookArgs = args_;
+                if (++current_ < total_) {
+                  currPost = posts[current_]
+                  if (currPost.length < 1)
+                    throw new Error("Your post must have a next argument -- e.g., function (next, ...)");
+                  postArgs = [once(next_)].concat(hookArgs);
+                  return currPost.apply(self, postArgs);
+                } else if (typeof lastArg === 'function'){
+                  // All post handlers are done, call original callback function
+                  return lastArg.apply(self, arguments);
+                }
+              };
+
+              // We are assuming that if the last argument provided to the wrapped function is a function, it was expecting
+              // a callback.  We trap that callback and wait to call it until all post handlers have finished.
+              if(typeof lastArg === 'function'){
+                args_[args_.length - 1] = once(next_);
+              }
+
+              total_ = posts.length;
+              current_ = -1;
+              ret = fn.apply(self, args_); // Execute wrapped function, post handlers come afterward
+
+              if (total_ && typeof lastArg !== 'function') return next_();  // no callback provided, execute next_() manually
+              return ret;
+            }
+          };
+
+      return _next.apply(this, arguments);
+    }, save=function wrappedPointCut() {
+      var args = [].slice.call(arguments);
+      var lastArg = args.pop();
+      var fn;
+
+      return new Promise.ES6(function(resolve, reject) {
+        if (lastArg && typeof lastArg !== 'function') {
+          args.push(lastArg);
+        } else {
+          fn = lastArg;
+        }
+        args.push(function(error, result) {
+          if (error) {
+            self.$__handleReject(error);
+            fn && fn(error);
+            reject(error);
+            return;
+          }
+
+          fn && fn.apply(null, [null].concat(Array.prototype.slice.call(arguments, 1)));
+          resolve(result);
+        });
+
+        self[newName].apply(self, args);
+      });
+    }, $__original_save=[function (next, options) {
+      // Nested docs have their own presave
+      if (this.ownerDocument) {
+        return next();
+      }
+
+      var hasValidateBeforeSaveOption = options &&
+        (typeof options === 'object') &&
+        ('validateBeforeSave' in options);
+
+      var shouldValidate;
+      if (hasValidateBeforeSaveOption) {
+        shouldValidate = !!options.validateBeforeSave;
+      } else {
+        shouldValidate = this.schema.options.validateBeforeSave;
+      }
+
+      // Validate
+      if (shouldValidate) {
+        // HACK: use $__original_validate to avoid promises so bluebird doesn't
+        // complain
+        if (this.$__original_validate) {
+          this.$__original_validate({ __noPromise: true }, function(error) {
+            next(error);
+          });
+        } else {
+          this.validate({ __noPromise: true }, function(error) {
+            next(error);
+          });
+        }
+      } else {
+        next();
+      }
+    }, function (next, done) {
+      var subdocs = this.$__getAllSubdocs();
+
+      if (!subdocs.length || this.$__preSavingFromParent) {
+        done();
+        next();
+        return;
+      }
+
+      async.each(subdocs, function(subdoc, cb) {
+        subdoc.$__preSavingFromParent = true;
+        subdoc.save(function(err) {
+          cb(err);
+        });
+      }, function(error) {
+        for (var i = 0; i < subdocs.length; ++i) {
+          delete subdocs[i].$__preSavingFromParent;
+        }
+        if (error) {
+          done(error);
+          return;
+        }
+        next();
+        done();
+      });
+    }], $__original_save=[]
+2015-12-24T07:42:38.439Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:38.440Z - debug: check entitle leavetype
+2015-12-24T07:42:38.441Z - debug: success
+2015-12-24T07:42:38.446Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:38.446Z - debug: check entitle
+2015-12-24T07:42:38.447Z - debug: success
+2015-12-24T07:42:38.453Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:42:38.453Z - debug: to service addLeaveEntitlement
+2015-12-24T07:42:38.453Z - debug: SMC0051
+2015-12-24T07:42:38.455Z - debug:  strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _id=undefined, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, lastName=init, firstName=init, employeeId=init, nickName=init, nationality=init, maritalStatus=init, licenseExpiryData=init, gender=init, dateOfBirth=init, bloodGroup=init, DLNumber=init, __v=init, location=init, leaveBalance=init, isArchive=init, imageUpload=init, _id=init, , , nickName=true, nationality=true, maritalStatus=true, licenseExpiryData=true, gender=true, dateOfBirth=true, bloodGroup=true, DLNumber=true, __v=true, employeeId=true, firstName=true, lastName=true, location=true, leaveBalance=true, isArchive=true, imageUpload=true, _id=true, , , stateNames=[require, modify, init, default, ignore], ownerDocument=undefined, fullPath=undefined, domain=null, , _eventsCount=0, _maxListeners=0, isNew=false, errors=undefined, nickName=thu, nationality=189, maritalStatus=0, licenseExpiryData=, gender=1, dateOfBirth=1991-07-11, bloodGroup=0, DLNumber=, __v=0, employeeId=SMC0051, firstName=Thu, lastName=Nguyen, location=189, leaveBalance=0, isArchive=1, imageUpload=, _bsontype=ObjectID, id=V{+T¬äv-ú, $__original_save=function () {
+      var self = this
+        , hookArgs // arguments eventually passed to the hook - are mutable
+        , lastArg = arguments[arguments.length-1]
+        , pres = this._pres[name]
+        , posts = this._posts[name]
+        , _total = pres.length
+        , _current = -1
+        , _asyncsLeft = proto[name].numAsyncPres
+        , _asyncsDone = function(err) {
+            if (err) {
+              return handleError(err);
+            }
+            --_asyncsLeft || _done.apply(self, hookArgs);
+          }
+        , handleError = function(err) {
+            if ('function' == typeof lastArg)
+              return lastArg(err);
+            if (errorCb) return errorCb.call(self, err);
+            throw err;
+          }
+        , _next = function () {
+            if (arguments[0] instanceof Error) {
+              return handleError(arguments[0]);
+            }
+            var _args = Array.prototype.slice.call(arguments)
+              , currPre
+              , preArgs;
+            if (_args.length && !(arguments[0] == null && typeof lastArg === 'function'))
+              hookArgs = _args;
+            if (++_current < _total) {
+              currPre = pres[_current]
+              if (currPre.isAsync && currPre.length < 2)
+                throw new Error("Your pre must have next and done arguments -- e.g., function (next, done, ...)");
+              if (currPre.length < 1)
+                throw new Error("Your pre must have a next argument -- e.g., function (next, ...)");
+              preArgs = (currPre.isAsync
+                          ? [once(_next), once(_asyncsDone)]
+                          : [once(_next)]).concat(hookArgs);
+              return currPre.apply(self, preArgs);
+            } else if (!_asyncsLeft) {
+              return _done.apply(self, hookArgs);
+            }
+          }
+        , _done = function () {
+            var args_ = Array.prototype.slice.call(arguments)
+              , ret, total_, current_, next_, done_, postArgs;
+
+            if (_current === _total) {
+              
+              next_ = function () {
+                if (arguments[0] instanceof Error) {
+                  return handleError(arguments[0]);
+                }
+                var args_ = Array.prototype.slice.call(arguments, 1)
+                  , currPost
+                  , postArgs;
+                if (args_.length) hookArgs = args_;
+                if (++current_ < total_) {
+                  currPost = posts[current_]
+                  if (currPost.length < 1)
+                    throw new Error("Your post must have a next argument -- e.g., function (next, ...)");
+                  postArgs = [once(next_)].concat(hookArgs);
+                  return currPost.apply(self, postArgs);
+                } else if (typeof lastArg === 'function'){
+                  // All post handlers are done, call original callback function
+                  return lastArg.apply(self, arguments);
+                }
+              };
+
+              // We are assuming that if the last argument provided to the wrapped function is a function, it was expecting
+              // a callback.  We trap that callback and wait to call it until all post handlers have finished.
+              if(typeof lastArg === 'function'){
+                args_[args_.length - 1] = once(next_);
+              }
+
+              total_ = posts.length;
+              current_ = -1;
+              ret = fn.apply(self, args_); // Execute wrapped function, post handlers come afterward
+
+              if (total_ && typeof lastArg !== 'function') return next_();  // no callback provided, execute next_() manually
+              return ret;
+            }
+          };
+
+      return _next.apply(this, arguments);
+    }, save=function wrappedPointCut() {
+      var args = [].slice.call(arguments);
+      var lastArg = args.pop();
+      var fn;
+
+      return new Promise.ES6(function(resolve, reject) {
+        if (lastArg && typeof lastArg !== 'function') {
+          args.push(lastArg);
+        } else {
+          fn = lastArg;
+        }
+        args.push(function(error, result) {
+          if (error) {
+            self.$__handleReject(error);
+            fn && fn(error);
+            reject(error);
+            return;
+          }
+
+          fn && fn.apply(null, [null].concat(Array.prototype.slice.call(arguments, 1)));
+          resolve(result);
+        });
+
+        self[newName].apply(self, args);
+      });
+    }, $__original_save=[function (next, options) {
+      // Nested docs have their own presave
+      if (this.ownerDocument) {
+        return next();
+      }
+
+      var hasValidateBeforeSaveOption = options &&
+        (typeof options === 'object') &&
+        ('validateBeforeSave' in options);
+
+      var shouldValidate;
+      if (hasValidateBeforeSaveOption) {
+        shouldValidate = !!options.validateBeforeSave;
+      } else {
+        shouldValidate = this.schema.options.validateBeforeSave;
+      }
+
+      // Validate
+      if (shouldValidate) {
+        // HACK: use $__original_validate to avoid promises so bluebird doesn't
+        // complain
+        if (this.$__original_validate) {
+          this.$__original_validate({ __noPromise: true }, function(error) {
+            next(error);
+          });
+        } else {
+          this.validate({ __noPromise: true }, function(error) {
+            next(error);
+          });
+        }
+      } else {
+        next();
+      }
+    }, function (next, done) {
+      var subdocs = this.$__getAllSubdocs();
+
+      if (!subdocs.length || this.$__preSavingFromParent) {
+        done();
+        next();
+        return;
+      }
+
+      async.each(subdocs, function(subdoc, cb) {
+        subdoc.$__preSavingFromParent = true;
+        subdoc.save(function(err) {
+          cb(err);
+        });
+      }, function(error) {
+        for (var i = 0; i < subdocs.length; ++i) {
+          delete subdocs[i].$__preSavingFromParent;
+        }
+        if (error) {
+          done(error);
+          return;
+        }
+        next();
+        done();
+      });
+    }], $__original_save=[]
+2015-12-24T07:43:08.706Z - debug: Something is happening in auth. 
+2015-12-24T07:43:08.800Z - debug: Something is happening with users controller. 
+2015-12-24T07:43:08.813Z - debug: employee 
+2015-12-24T07:43:08.971Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:43:08.972Z - debug: id is SMC0051
+2015-12-24T07:43:08.974Z - debug: employee Id is SMC0051
+2015-12-24T07:44:00.438Z - debug: data is 
+2015-12-24T07:44:00.438Z - debug:  _employeeId=SMC0051, _leaveTypeId=55cab6b5ff20afe30bda8260, _fromDate=12/24/2015, _toDate=12/29/2015, _comment=tet, _identify=, _fromTime=FullDay, _toTime=FullDay, _color=#0000FF, _user=anhthu, _leaveType=Tet VN, _status=0
+2015-12-24T07:44:00.967Z - debug: employee Id is SMC0051
+2015-12-24T07:47:16.398Z - debug: Something is happening with users controller. 
+2015-12-24T07:50:53.904Z - debug: Something is happening in auth. 
+2015-12-24T07:50:54.031Z - debug: Something is happening with users controller. 
+2015-12-24T07:50:54.041Z - debug: employee 
+2015-12-24T07:50:56.803Z - debug: Something is happening of role. 
+2015-12-24T07:50:56.808Z - debug: Default ESS already exist
+2015-12-24T07:50:56.808Z - debug: Default Supervisor already exist
+2015-12-24T07:51:36.882Z - debug: employee 
+2015-12-24T07:51:36.953Z - debug: Something is happening with users controller. 
+2015-12-24T07:51:50.264Z - debug: Something is happening of role. 
+2015-12-24T07:51:50.278Z - debug: employee 
+2015-12-24T07:51:50.314Z - debug: Default ESS already exist
+2015-12-24T07:51:50.314Z - debug: Default Supervisor already exist
+2015-12-24T07:51:50.354Z - debug: Something is happening with users controller. 
+2015-12-24T07:51:50.368Z - debug: Something is happening with users controller. 
+2015-12-24T07:52:17.392Z - debug: Something is happening with users controller. 
+2015-12-24T07:52:17.427Z - debug: Something is happening with users controller. 
+2015-12-24T07:52:18.992Z - debug: employee 
+2015-12-24T07:52:19.027Z - debug: Something is happening with users controller. 
+2015-12-24T07:52:44.354Z - debug: Something is happening in auth. 
+2015-12-24T07:52:44.441Z - debug: employee 
+2015-12-24T07:52:44.469Z - debug: Something is happening with users controller. 
+2015-12-24T07:52:44.603Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T07:52:44.603Z - debug: id is SMC0051
+2015-12-24T07:52:44.604Z - debug: employee Id is SMC0051
+2015-12-24T07:55:17.758Z - debug: Something is happening in auth. 
+2015-12-24T07:55:17.851Z - debug: Something is happening with users controller. 
+2015-12-24T07:55:17.860Z - debug: employee 
+2015-12-24T07:55:27.730Z - debug: Something is happening of role. 
+2015-12-24T07:55:27.733Z - debug: Default ESS already exist
+2015-12-24T07:55:27.733Z - debug: Default Supervisor already exist
+2015-12-24T07:55:29.859Z - debug: Something is happening of role. 
+2015-12-24T07:55:29.877Z - debug: Something is happening of role. 
+2015-12-24T07:55:29.878Z - debug: to service get data json permission
+2015-12-24T07:55:31.819Z - debug: Something is happening of role. 
+2015-12-24T07:55:31.819Z - debug: to service edit role
+2015-12-24T07:55:31.819Z - debug: 55b892e3227f583603e95870
+2015-12-24T07:55:31.900Z - debug: Something is happening of role. 
+2015-12-24T07:55:31.905Z - debug: Default ESS already exist
+2015-12-24T07:55:31.905Z - debug: Default Supervisor already exist
+2015-12-24T08:04:36.508Z - debug: Something is happening of role. 
+2015-12-24T08:04:36.528Z - debug: Something is happening of role. 
+2015-12-24T08:04:36.528Z - debug: to service get data json permission
+2015-12-24T08:04:37.464Z - debug: Something is happening of role. 
+2015-12-24T08:04:37.464Z - debug: to service edit role
+2015-12-24T08:04:37.464Z - debug: 55b892e3227f583603e95870
+2015-12-24T08:04:37.497Z - debug: Something is happening of role. 
+2015-12-24T08:04:37.506Z - debug: Default ESS already exist
+2015-12-24T08:04:37.506Z - debug: Default Supervisor already exist
+2015-12-24T08:04:40.501Z - debug: employee 
+2015-12-24T08:04:40.545Z - debug: Something is happening with users controller. 
+2015-12-24T08:04:45.986Z - debug: Something is happening of role. 
+2015-12-24T08:04:45.999Z - debug: employee 
+2015-12-24T08:04:46.044Z - debug: Default ESS already exist
+2015-12-24T08:04:46.044Z - debug: Default Supervisor already exist
+2015-12-24T08:04:46.088Z - debug: Something is happening with users controller. 
+2015-12-24T08:04:46.108Z - debug: Something is happening with users controller. 
+2015-12-24T08:04:50.772Z - debug: Something is happening with users controller. 
+2015-12-24T08:04:50.782Z - debug: Something is happening with users controller. 
+2015-12-24T08:04:52.363Z - debug: employee 
+2015-12-24T08:04:52.402Z - debug: Something is happening with users controller. 
+2015-12-24T08:05:32.951Z - debug: Something is happening in auth. 
+2015-12-24T08:05:33.053Z - debug: Something is happening with users controller. 
+2015-12-24T08:05:33.065Z - debug: employee 
+2015-12-24T08:06:06.240Z - debug: Something is happening in auth. 
+2015-12-24T08:06:06.315Z - debug: Something is happening with users controller. 
+2015-12-24T08:06:06.326Z - debug: employee 
+2015-12-24T08:06:06.460Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:06:06.460Z - debug: id is SMC0051
+2015-12-24T08:06:06.462Z - debug: employee Id is SMC0051
+2015-12-24T08:06:08.355Z - debug: employee 
+2015-12-24T08:06:12.348Z - debug: data on server 
+2015-12-24T08:06:12.348Z - debug: 
+2015-12-24T08:06:12.398Z - debug: Something is happening with users controller. 
+2015-12-24T08:06:12.410Z - debug: employee 
+2015-12-24T08:06:12.470Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:06:12.470Z - debug: id is SMC0051
+2015-12-24T08:06:12.474Z - debug: employee Id is SMC0051
+2015-12-24T08:06:14.057Z - debug: employee 
+2015-12-24T08:06:18.043Z - debug: data on server 
+2015-12-24T08:06:18.043Z - debug: 
+2015-12-24T08:11:15.295Z - debug: Listening on *:3007
+2015-12-24T08:11:18.589Z - debug: Something is happening with users controller. 
+2015-12-24T08:11:18.613Z - debug: employee 
+2015-12-24T08:11:18.677Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:11:18.677Z - debug: id is SMC0051
+2015-12-24T08:11:18.679Z - debug: employee Id is SMC0051
+2015-12-24T08:11:22.295Z - debug: employee 
+2015-12-24T08:11:25.774Z - debug: employee 
+2015-12-24T08:11:40.386Z - debug: Something is happening in auth. 
+2015-12-24T08:11:40.486Z - debug: Something is happening with users controller. 
+2015-12-24T08:11:40.497Z - debug: employee 
+2015-12-24T08:11:40.626Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:11:40.626Z - debug: id is SMC0051
+2015-12-24T08:11:40.627Z - debug: employee Id is SMC0051
+2015-12-24T08:11:42.490Z - debug: employee 
+2015-12-24T08:11:46.488Z - debug: data on server 
+2015-12-24T08:11:46.488Z - debug: 
+2015-12-24T08:13:09.082Z - debug: Listening on *:3007
+2015-12-24T08:13:17.256Z - debug: Something is happening with users controller. 
+2015-12-24T08:13:17.286Z - debug: employee 
+2015-12-24T08:13:17.346Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:13:17.346Z - debug: id is SMC0051
+2015-12-24T08:13:17.348Z - debug: employee Id is SMC0051
+2015-12-24T08:13:18.792Z - debug: employee 
+2015-12-24T08:13:21.572Z - debug: Something is happening with users controller. 
+2015-12-24T08:13:21.594Z - debug: employee 
+2015-12-24T08:13:21.646Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:13:21.646Z - debug: id is SMC0051
+2015-12-24T08:13:21.647Z - debug: employee Id is SMC0051
+2015-12-24T08:13:22.775Z - debug: data on server 
+2015-12-24T08:13:22.775Z - debug: 
+2015-12-24T08:13:25.130Z - debug: Something is happening with users controller. 
+2015-12-24T08:13:25.158Z - debug: employee 
+2015-12-24T08:13:25.339Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:13:25.339Z - debug: id is SMC0051
+2015-12-24T08:13:25.340Z - debug: employee Id is SMC0051
+2015-12-24T08:13:26.609Z - debug: employee 
+2015-12-24T08:13:30.590Z - debug: data on server 
+2015-12-24T08:13:30.590Z - debug: 
+2015-12-24T08:14:54.752Z - debug: Listening on *:3007
+2015-12-24T08:15:01.883Z - debug: Something is happening with users controller. 
+2015-12-24T08:15:01.919Z - debug: employee 
+2015-12-24T08:15:02.088Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:15:02.089Z - debug: id is SMC0051
+2015-12-24T08:15:02.091Z - debug: employee Id is SMC0051
+2015-12-24T08:15:04.794Z - debug: employee 
+2015-12-24T08:15:08.126Z - debug: Something is happening with users controller. 
+2015-12-24T08:15:08.147Z - debug: employee 
+2015-12-24T08:15:08.232Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:15:08.232Z - debug: id is SMC0051
+2015-12-24T08:15:08.233Z - debug: employee Id is SMC0051
+2015-12-24T08:15:09.312Z - debug: Something is happening with users controller. 
+2015-12-24T08:15:09.324Z - debug: employee 
+2015-12-24T08:15:09.510Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:15:09.510Z - debug: id is SMC0051
+2015-12-24T08:15:09.512Z - debug: employee Id is SMC0051
+2015-12-24T08:16:29.479Z - debug: Listening on *:3007
+2015-12-24T08:16:37.999Z - debug: Something is happening with users controller. 
+2015-12-24T08:16:38.034Z - debug: employee 
+2015-12-24T08:16:38.184Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:16:38.184Z - debug: id is SMC0051
+2015-12-24T08:16:38.185Z - debug: employee Id is SMC0051
+2015-12-24T08:16:39.772Z - debug: employee 
+2015-12-24T08:16:43.777Z - debug: data on server 
+2015-12-24T08:16:43.777Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:16:43.785Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:16:43.786Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:16:43.786Z - error:  ok=1, nModified=1, n=1
+2015-12-24T08:17:34.437Z - debug: Something is happening in auth. 
+2015-12-24T08:17:34.552Z - debug: Something is happening with users controller. 
+2015-12-24T08:17:34.573Z - debug: employee 
+2015-12-24T08:17:38.340Z - debug: employee 
+2015-12-24T08:17:42.325Z - debug: data on server 
+2015-12-24T08:17:42.325Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:17:42.328Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:17:42.328Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:17:42.329Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:08.925Z - debug: Something is happening of role. 
+2015-12-24T08:18:08.938Z - debug: Sending Mail
+2015-12-24T08:18:08.980Z - debug: employee 
+2015-12-24T08:18:11.279Z - debug: Something is happening of role. 
+2015-12-24T08:18:11.292Z - debug: Sending Mail
+2015-12-24T08:18:11.313Z - debug: employee 
+2015-12-24T08:18:12.245Z - debug: Message sent successfully!
+2015-12-24T08:18:12.245Z - debug: Server responded with "250 2.0.0 OK 1450945091 ud10sm57175068pab.27 - gsmtp"
+2015-12-24T08:18:12.941Z - debug: data on server 
+2015-12-24T08:18:12.941Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:18:12.944Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:12.944Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:12.945Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:13.060Z - debug: Something is happening of role. 
+2015-12-24T08:18:13.069Z - debug: Sending Mail
+2015-12-24T08:18:13.082Z - debug: employee 
+2015-12-24T08:18:14.300Z - debug: Message sent successfully!
+2015-12-24T08:18:14.300Z - debug: Server responded with "250 2.0.0 OK 1450945093 k76sm13334198pfb.37 - gsmtp"
+2015-12-24T08:18:14.804Z - debug: Something is happening of role. 
+2015-12-24T08:18:14.812Z - debug: Sending Mail
+2015-12-24T08:18:14.821Z - debug: employee 
+2015-12-24T08:18:15.291Z - debug: data on server 
+2015-12-24T08:18:15.291Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:18:15.294Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:15.294Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:15.295Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:16.211Z - debug: Message sent successfully!
+2015-12-24T08:18:16.211Z - debug: Server responded with "250 2.0.0 OK 1450945095 fl9sm57171098pab.33 - gsmtp"
+2015-12-24T08:18:17.074Z - debug: data on server 
+2015-12-24T08:18:17.074Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:18:17.077Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:17.077Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:17.077Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:17.896Z - debug: Message sent successfully!
+2015-12-24T08:18:17.896Z - debug: Server responded with "250 2.0.0 OK 1450945097 kk5sm40852666pab.16 - gsmtp"
+2015-12-24T08:18:18.819Z - debug: data on server 
+2015-12-24T08:18:18.819Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:18:18.821Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:18.821Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:18.821Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:50.036Z - debug: Something is happening in auth. 
+2015-12-24T08:18:50.133Z - debug: Something is happening with users controller. 
+2015-12-24T08:18:50.141Z - debug: employee 
+2015-12-24T08:18:50.281Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:18:50.281Z - debug: id is SMC0051
+2015-12-24T08:18:50.283Z - debug: employee Id is SMC0051
+2015-12-24T08:18:52.357Z - debug: employee 
+2015-12-24T08:18:55.562Z - debug: Something is happening of role. 
+2015-12-24T08:18:55.571Z - debug: Sending Mail
+2015-12-24T08:18:55.585Z - debug: employee 
+2015-12-24T08:18:56.348Z - debug: data on server 
+2015-12-24T08:18:56.349Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:18:56.351Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:56.352Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:56.352Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:56.570Z - debug: Something is happening of role. 
+2015-12-24T08:18:56.576Z - debug: Sending Mail
+2015-12-24T08:18:56.586Z - debug: employee 
+2015-12-24T08:18:58.074Z - debug: Something is happening of role. 
+2015-12-24T08:18:58.080Z - debug: Sending Mail
+2015-12-24T08:18:58.205Z - debug: employee 
+2015-12-24T08:18:58.899Z - debug: Something is happening of role. 
+2015-12-24T08:18:58.908Z - debug: Sending Mail
+2015-12-24T08:18:58.917Z - debug: employee 
+2015-12-24T08:18:59.201Z - debug: Message sent successfully!
+2015-12-24T08:18:59.201Z - debug: Server responded with "250 2.0.0 OK 1450945138 zo4sm44797009pac.28 - gsmtp"
+2015-12-24T08:18:59.577Z - debug: data on server 
+2015-12-24T08:18:59.577Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:18:59.580Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:59.580Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:59.580Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:18:59.847Z - debug: Message sent successfully!
+2015-12-24T08:18:59.847Z - debug: Server responded with "250 2.0.0 OK 1450945139 h80sm22573258pfd.44 - gsmtp"
+2015-12-24T08:19:00.579Z - debug: data on server 
+2015-12-24T08:19:00.579Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:19:00.582Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:00.582Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:00.582Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:01.509Z - debug: Message sent successfully!
+2015-12-24T08:19:01.509Z - debug: Server responded with "250 2.0.0 OK 1450945141 70sm2586674pfa.3 - gsmtp"
+2015-12-24T08:19:02.200Z - debug: data on server 
+2015-12-24T08:19:02.200Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:19:02.202Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:02.203Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:02.203Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:02.235Z - debug: Message sent successfully!
+2015-12-24T08:19:02.235Z - debug: Server responded with "250 2.0.0 OK 1450945141 s67sm26383959pfi.72 - gsmtp"
+2015-12-24T08:19:02.911Z - debug: data on server 
+2015-12-24T08:19:02.911Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:19:02.913Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:02.913Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:19:02.913Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:30:51.743Z - debug: Listening on *:3007
+2015-12-24T08:41:59.421Z - debug: Something is happening with users controller. 
+2015-12-24T08:41:59.461Z - debug: employee 
+2015-12-24T08:41:59.520Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:41:59.521Z - debug: id is SMC0051
+2015-12-24T08:41:59.530Z - debug: employee Id is SMC0051
+2015-12-24T08:42:01.365Z - debug: Something is happening with users controller. 
+2015-12-24T08:42:01.383Z - debug: employee 
+2015-12-24T08:42:01.595Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:42:01.595Z - debug: id is SMC0051
+2015-12-24T08:42:01.596Z - debug: employee Id is SMC0051
+2015-12-24T08:42:06.166Z - debug: employee 
+2015-12-24T08:42:06.186Z - debug: Something is happening with users controller. 
+2015-12-24T08:42:06.411Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:42:06.412Z - debug: id is SMC0051
+2015-12-24T08:42:06.416Z - debug: employee Id is SMC0051
+2015-12-24T08:42:24.031Z - debug: employee 
+2015-12-24T08:42:24.047Z - debug: Something is happening with users controller. 
+2015-12-24T08:42:24.302Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:42:24.303Z - debug: id is SMC0051
+2015-12-24T08:42:24.304Z - debug: employee Id is SMC0051
+2015-12-24T08:42:28.419Z - debug: employee 
+2015-12-24T08:42:32.575Z - debug: data on server 
+2015-12-24T08:42:32.575Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:42:32.583Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:42:32.584Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:42:32.584Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:43:12.435Z - debug: Listening on *:3007
+2015-12-24T08:43:21.155Z - debug: Something is happening with users controller. 
+2015-12-24T08:43:21.191Z - debug: employee 
+2015-12-24T08:43:21.245Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:43:21.245Z - debug: id is SMC0051
+2015-12-24T08:43:21.249Z - debug: employee Id is SMC0051
+2015-12-24T08:43:23.948Z - debug: Something is happening with users controller. 
+2015-12-24T08:43:23.978Z - debug: employee 
+2015-12-24T08:43:24.206Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:43:24.206Z - debug: id is SMC0051
+2015-12-24T08:43:24.214Z - debug: employee Id is SMC0051
+2015-12-24T08:43:31.883Z - debug: employee 
+2015-12-24T08:43:31.900Z - debug: Something is happening with users controller. 
+2015-12-24T08:43:32.145Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:43:32.148Z - debug: id is SMC0051
+2015-12-24T08:43:32.151Z - debug: employee Id is SMC0051
+2015-12-24T08:43:35.732Z - debug: employee 
+2015-12-24T08:43:39.734Z - debug: data on server 
+2015-12-24T08:43:39.734Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:43:39.742Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:43:39.743Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:43:39.743Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:51:13.300Z - debug: Listening on *:3007
+2015-12-24T08:51:18.736Z - debug: employee 
+2015-12-24T08:51:18.756Z - debug: Something is happening with users controller. 
+2015-12-24T08:51:18.831Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:51:18.832Z - debug: id is SMC0051
+2015-12-24T08:51:18.838Z - debug: employee Id is SMC0051
+2015-12-24T08:51:20.393Z - debug: employee 
+2015-12-24T08:51:20.405Z - debug: Something is happening with users controller. 
+2015-12-24T08:51:20.650Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T08:51:20.650Z - debug: id is SMC0051
+2015-12-24T08:51:20.654Z - debug: employee Id is SMC0051
+2015-12-24T08:51:25.233Z - debug: employee 
+2015-12-24T08:51:29.234Z - debug: data on server 
+2015-12-24T08:51:29.234Z - debug:  arrData=[_id=55e3f7316acc0be15ff66d9c, numOfDays=0.5, _id=55e41d7f6acc0be15ff66da8, numOfDays=4, _id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T08:51:29.242Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:51:29.243Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:51:29.243Z - error:  ok=1, nModified=0, n=1
+2015-12-24T08:55:49.199Z - debug: Listening on *:3007
+2015-12-24T09:06:51.424Z - debug: Listening on *:3007
+2015-12-24T09:06:58.359Z - debug: Something is happening with users controller. 
+2015-12-24T09:06:58.401Z - debug: employee 
+2015-12-24T09:06:58.516Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:06:58.516Z - debug: id is SMC0051
+2015-12-24T09:06:58.519Z - debug: employee Id is SMC0051
+2015-12-24T09:07:00.304Z - debug: Something is happening with users controller. 
+2015-12-24T09:07:00.337Z - debug: employee 
+2015-12-24T09:07:00.546Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:07:00.546Z - debug: id is SMC0051
+2015-12-24T09:07:00.547Z - debug: employee Id is SMC0051
+2015-12-24T09:07:11.294Z - debug: employee 
+2015-12-24T09:07:11.311Z - debug: Something is happening with users controller. 
+2015-12-24T09:07:11.611Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:07:11.611Z - debug: id is SMC0051
+2015-12-24T09:07:11.615Z - debug: employee Id is SMC0051
+2015-12-24T09:07:15.191Z - debug: employee 
+2015-12-24T09:07:15.271Z - debug: employee Id is SMC0051
+2015-12-24T09:07:19.200Z - debug: data on server 
+2015-12-24T09:07:19.201Z - debug:  arrData=[_id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T09:07:19.212Z - error:  ok=1, nModified=0, n=1
+2015-12-24T09:09:15.262Z - debug: Listening on *:3007
+2015-12-24T09:09:19.462Z - debug: employee 
+2015-12-24T09:09:19.475Z - debug: Something is happening with users controller. 
+2015-12-24T09:09:19.537Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:09:19.537Z - debug: id is SMC0051
+2015-12-24T09:09:19.539Z - debug: employee Id is SMC0051
+2015-12-24T09:09:21.745Z - debug: Something is happening with users controller. 
+2015-12-24T09:09:21.775Z - debug: employee 
+2015-12-24T09:09:21.937Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:09:21.937Z - debug: id is SMC0051
+2015-12-24T09:09:21.939Z - debug: employee Id is SMC0051
+2015-12-24T09:09:29.869Z - debug: employee 
+2015-12-24T09:09:29.901Z - debug: employee Id is SMC0051
+2015-12-24T09:09:33.869Z - debug: data on server 
+2015-12-24T09:09:33.869Z - debug:  arrData=[_id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T09:09:33.875Z - error:  ok=1, nModified=0, n=1
+2015-12-24T09:14:33.827Z - debug: Listening on *:3007
+2015-12-24T09:14:41.048Z - debug: employee 
+2015-12-24T09:14:41.122Z - debug: employee Id is SMC0051
+2015-12-24T09:14:45.033Z - debug: data on server 
+2015-12-24T09:14:45.033Z - debug:  arrData=[_id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T09:14:45.043Z - error:  ok=1, nModified=0, n=1
+2015-12-24T09:15:42.629Z - debug: Listening on *:3007
+2015-12-24T09:15:46.610Z - debug: employee 
+2015-12-24T09:15:46.695Z - debug: employee Id is SMC0051
+2015-12-24T09:15:48.729Z - debug: employee 
+2015-12-24T09:15:48.839Z - debug: employee Id is SMC0051
+2015-12-24T09:15:51.396Z - debug: employee 
+2015-12-24T09:15:51.410Z - debug: Something is happening with users controller. 
+2015-12-24T09:15:51.592Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:15:51.593Z - debug: id is SMC0051
+2015-12-24T09:15:51.597Z - debug: employee Id is SMC0051
+2015-12-24T09:15:52.717Z - debug: data on server 
+2015-12-24T09:15:52.717Z - debug:  arrData=[_id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T09:15:52.723Z - error:  ok=1, nModified=0, n=1
+2015-12-24T09:15:53.703Z - debug: employee 
+2015-12-24T09:15:53.734Z - debug: employee Id is SMC0051
+2015-12-24T09:15:55.456Z - debug: employee 
+2015-12-24T09:15:55.473Z - debug: Something is happening with users controller. 
+2015-12-24T09:15:55.580Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:15:55.580Z - debug: id is SMC0051
+2015-12-24T09:15:55.588Z - debug: employee Id is SMC0051
+2015-12-24T09:15:57.047Z - debug: employee 
+2015-12-24T09:15:57.065Z - debug: Something is happening with users controller. 
+2015-12-24T09:15:57.309Z - debug: Something is happening with leaveEntitlement controller. 
+2015-12-24T09:15:57.309Z - debug: id is SMC0051
+2015-12-24T09:15:57.314Z - debug: employee Id is SMC0051
+2015-12-24T09:15:58.871Z - debug: employee 
+2015-12-24T09:15:58.904Z - debug: employee Id is SMC0051
+2015-12-24T09:16:02.841Z - debug: data on server 
+2015-12-24T09:16:02.842Z - debug:  arrData=[_id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T09:16:02.846Z - error:  ok=1, nModified=0, n=1
+2015-12-24T09:16:33.862Z - debug: Listening on *:3007
+2015-12-24T09:16:48.774Z - debug: Listening on *:3007
+2015-12-24T09:17:15.147Z - debug: employee 
+2015-12-24T09:17:15.215Z - debug: employee Id is SMC0051
+2015-12-24T09:17:19.117Z - debug: data on server 
+2015-12-24T09:17:19.117Z - debug:  arrData=[_id=567ba2406240c533075432aa, numOfDays=3.5]
+2015-12-24T09:17:19.124Z - error:  ok=1, nModified=0, n=1

@@ -1,0 +1,65 @@
+[
+  {
+    "name" : "Default Ess",
+    "permissions" : [
+      {
+        "permission_id" : "6",
+        "label" : "AssignLeave",
+        "rights" : [
+          {
+            "name" : "read",
+            "right_id" : "1"
+          }
+        ]
+      },
+      {
+        "permission_id" : "9",
+        "label" : "MyLeaveList",
+        "rights" : [
+          {
+            "name" : "read",
+            "right_id" : "1"
+          }
+        ]
+      }
+    ],
+    "type" : {
+      "nameType" : "ESS",
+      "roleTypeId" : "1"
+    }
+  },
+  {
+
+    "name" : "Default Supervisor",
+    "permissions" : [
+      {
+        "permission_id" : "0",
+        "label" : "User",
+        "rights" : [
+          {
+            "name" : "read",
+            "right_id" : "1"
+          }
+        ]
+      },
+      {
+        "permission_id" : "6",
+        "label" : "AssignLeave",
+        "rights" : [
+          {
+            "name" : "read",
+            "right_id" : "1"
+          },
+          {
+            "name" : "write",
+            "right_id" : "2"
+          }
+        ]
+      }
+    ],
+    "type" : {
+      "nameType" : "Supervisor",
+      "roleTypeId" : "2"
+    }
+  }
+]

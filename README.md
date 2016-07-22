@@ -5,7 +5,7 @@ A Node app built with MongoDB and Reactjs.
 Node provides the RESTful API. React provides the frontend and accesses the API. MongoDB stores like a hoarder.
 
 # Live demo
-- Link: [Live Demo](https://smartcop.herokuapp.com/)
+- Link: [Live Demo](http://smartcop.herokuapp.com/)
 - admin test account: admin123
 - password: 123456
 
